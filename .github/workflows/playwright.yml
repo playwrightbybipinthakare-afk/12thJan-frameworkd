@@ -4,9 +4,7 @@ on:
     branches: [ main, master ]
   pull_request:
     branches: [ main, master ]
-  schedule:
-    - cron: '15 7 * * *' # Runs every day at midnight  
-jobs:
+  jobs:
   test:
     timeout-minutes: 60
     runs-on: ubuntu-latest
